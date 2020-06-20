@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  {% load static %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -24,20 +26,20 @@
 
 
   <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
     }
+  }
   </style>
   <!-- Custom styles for this template -->
   <link href="album.css" rel="stylesheet">
@@ -52,7 +54,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="#">Facebook</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
+          <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
           <a class="nav-item nav-link" href="#">Blog</a>
         </div>
       </div>
